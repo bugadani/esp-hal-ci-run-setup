@@ -23,7 +23,7 @@ architectures=(
     "aarch64"
     "aarch64"
 )
-probe_rs_rev="4b5c0b6d293324b6e2e1fd425386d3491298271a"
+probe_rs_rev="8cd15f5b787aeaa93c448a340d1c96613f158a87"
 
 # unique values of architectures
 declare -A targets
@@ -39,7 +39,7 @@ build_for_architecture () {
     fi
 
     if [ ! -d "probe-rs" ]; then
-        git clone git@github.com:bugadani/probe-rs.git
+        git clone git@github.com:probe-rs/probe-rs.git
     fi
 
     cd probe-rs
